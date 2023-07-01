@@ -1,0 +1,28 @@
+.maindesign{
+	position: fixed;
+	top:90px;
+	width: 1360px;
+	height: 830px;
+	color: #fff;
+	font-size: 20px;
+	overflow: auto;
+}
+
+.maindesign h1{
+	font-size: 70px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.photoblock{
+	margin:7px;
+	float: left;
+	width: 212px;
+	height: 159px;
+}
+
+.photoblock img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}

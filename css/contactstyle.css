@@ -1,0 +1,85 @@
+.maindesign{
+	position: fixed;
+	top:90px;
+	width: 1360px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.maindesign h1{
+	font-size: 70px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: black;
+}
+
+.logos{
+	max-width: 1350px;
+	margin: auto;
+    overflow: auto;
+}
+.logoblock{
+margin:2px;
+background-color: rgba(255,255,255,0.2);
+float: left;
+width:280px;
+height: auto;
+border-radius: 5%;
+
+}
+
+.logoblock .logo{
+    float: left;
+    margin: 5px 10px;
+    width: 90px;
+}
+
+.logoblock img{
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.logoblock a{
+	border-radius: 50%;
+}
+
+.desc{
+	margin-left: 110px;
+	text-align: center;
+}
+
+.desc a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.desc h5{
+	margin-top: 7px;
+}
+.desc p{
+	margin-top: 7px;
+	font-family: Arial;
+	font-size: 12px;
+	opacity: 0.9;
+}
+
+.l1{
+width:100px;
+margin-left: 170px;
+background-color:rgba(255,255,255,0);
+height: auto;
+margin-bottom: 17px;
+}
+
+.l1 img:hover{
+    width: 100px;
+}
+
+.footinfo {
+	float: right;
+    margin-right: 15px;
+	font-family: Arial;
+	font-size: 12px;
+	color: #ffff66;
+}

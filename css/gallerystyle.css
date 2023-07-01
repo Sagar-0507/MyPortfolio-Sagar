@@ -1,0 +1,25 @@
+.maindesign{
+	width: 1320px;
+	margin-top: 45px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.maindesign h1{
+	font-size: 70px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.photoblock{
+	margin:8px;
+	float: left;
+	width: 208px;
+	height: 156px;
+}
+
+.photoblock img{
+	vertical-align: middle;
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,73 @@
+.maindesign{
+	position: fixed;
+	top:70px;
+	width: 1360px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.maindesign h1{
+	font-size: 70px;
+	margin-left: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.rdbtn{
+	background-color: #000;
+	color: #fff;
+	margin-bottom: 15px;
+}
+.rd1{
+	margin-left: 530px;
+}
+.rd2{
+    margin-left: 50px;
+}
+
+.maindesign label{
+	margin-left: 530px;
+	text-align: left;
+}
+
+.maindesign .txtbox{
+	width: 360px;
+	margin-left: 530px;
+	margin-bottom: 15px;
+	background-color: rgba(0,0,0,0.3);
+	font-weight: bold;
+	color: #fff;
+}
+
+.maindesign textarea{
+	width: 360px;
+	margin-left: 530px;
+	background-color: rgba(0,0,0,0.3);
+	color: #fff;
+	resize: none;
+	margin-bottom: 15px;
+}
+
+.maindesign button{
+	height: 40px;
+	width: 110px;
+	margin-left: 650px;
+	background-color: #000;
+	color: #33ff33;
+	font-size: 30px
+}
+
+.maindesign button:hover{
+	background-color: #fff;
+	color: #ff3333;
+	transition: 0.6s
+}
+
+.footinfo{
+	float: right;
+	margin-top:30px;
+	margin-right: 15px;
+	font-family: Arial;
+	font-size: 12px;
+	color: #ffff66;
+}
