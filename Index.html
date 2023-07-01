@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <title>welcome</title>
+    <style type="text/css">
+        body{
+         background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) ,url('background_img.jpg');
+         background-size: cover;
+          }
+
+        .main{
+         text-align: center;
+         height: 180px;
+         color:white;
+         font-family: Gabriola;
+         font-size: 150px;
+         margin: 80px 0px 0px 0px;
+         opacity: 0
+          }
+
+         .sub{
+          text-align: center;
+          font-family: Gabriola;
+          height: 70px;
+          color:white;
+          font-size: 20px;
+          opacity: 0
+         }
+
+         .suba{
+           margin: 20px 0px 150px 0px;
+         }
+
+         a{
+         color: green;
+         font-size:30px;
+         }
+</style>
+</head>
+<body>
+     <p class="main">WELCOME</p>
+     <p class="sub suba">
+                                                    Welcome to my site!<br>
+                     This site is a work in progress , so feel free to send some suggestions to<br>
+               make this site more user friendly and I am really sorry if you find any glitches in the site.<br>
+               And also this site does not have a responsive design so please open this site while browser is in maximize mode.<br>
+                                                     Have a nice day !
+     </p>
+     <p class="sub">
+         <a href="home.html" target="_self"><b>Continue -></b></a>
+     </p>
+
+    <script type="text/javascript">
+       setTimeout(function(){
+       document.getElementsByClassName("main")[0].style.opacity=1;
+      } ,600);
+       setTimeout(function(){
+       document.getElementsByClassName("sub")[0].style.opacity=0.9;
+      } ,800);
+      setTimeout(function(){
+       document.getElementsByClassName("sub")[1].style.opacity=1;
+      } ,2000);
+     /*setTimeout(function(){
+       window.location="home.html";
+      },10000);*/
+    </script>
+</body>
+
+</html>

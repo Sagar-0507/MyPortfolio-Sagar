@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+  <title>Suggestions</title>
+  <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+  <link rel="stylesheet" type="text/css" href="css/suggestionsstyle.css">
+</head>
+<body>
+  <header >
+      <div class="main">
+        <ul class="nav">
+           <li ><a href="Home.html" target="_self">Home</a></li>
+          <li><a href="Gallery.html" target="_self">Gallery</a></li>
+          <li><a href="About.html" target="_self">About</a></li>
+          <li><a href="Contact.html" target="_self">Contact</a></li>
+          <li class="active"><a href="#">Suggestions</a></li>
+        </ul>
+      </div>
+   </header>
+    <div class="maindesign">
+     <h1> Suggestions</h1>
+     <form name="submitform" onsubmit="submitsuggest()" method="POST">
+       <input type="radio" id="typ1" class="rdbtn rd1" name="type" value="suggestion" checked>Suggestion</input>
+       <input type="radio" id="typ2" class="rdbtn rd2" name="type" value="report glitch">Report glitch/bug</input><br>
+       <label for="Pname">Name<sup style="color: red">*</sup> :-</label><br>
+       <input type="text" class="txtbox" name="Pname"></input><br>
+       <label for="email">Email Id<sup style="color: red">*</sup> :-</label><br>
+       <input type="text" class="txtbox" name="email" placeholder="eg: abc@xyz.com"></input><br>
+       <label for="topic">About :-</label><br>
+       <input type="text" class="txtbox" name="topic" placeholder="eg: Suggestion about Home Page"></input><br>
+       <label for="txta" >Suggestion<sup style="color: red">*</sup> :-</label><br>
+       <textarea name="txta" rows="7" placeholder="Enter your suggestion here:"></textarea><br>
+       <button type="submit" id="submit" name="submit">Submit</button>
+       </form>
+       <p class="footinfo">The fields marked with a <font style="color: red">*</font> are mandatory.</p>
+  </div>
+  <script type="text/javascript">
+   function submitsuggest(){
+      var nm = document.forms["submitform"]["Pname"].value;
+      var eml = document.forms["submitform"]["email"].value;
+      var tpc = document.forms["submitform"]["topic"].value;
+      var cntnt = document.forms["submitform"]["txta"].value;
+      if(nm==""||nm==null||eml==""||eml==null||cntnt==""||cntnt==null){
+       alert("Please enter details in the fields marked with *");
+       return false;
+      }
+      else{
+        if(document.getElementById("typ2").checked)
+            alert("Sorry for the inconvenience.\nI'll try to solve the problem as soon as possible and Thanks a lot for your time");
+
+        else
+            alert("Thanks for giving us your valuable time and suggestion");
+
+      }
+
+    }
+  </script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+	 <title>Contact</title>
+	 <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+	 <link rel="stylesheet" type="text/css" href="css/contactstyle.css">
+</head>
+<body>
+  <header >
+      <div class="main">
+        <ul class="nav">
+           <li ><a href="Home.html" target="_self">Home</a></li>
+          <li><a href="Gallery.html" target="_self">Gallery</a></li>
+          <li><a href="About.html" target="_self">About</a></li>
+          <li class="active"><a href="#">Contact</a></li>
+          <li><a href="Suggestions.html" target="_self">Suggestions</a></li>
+        </ul>
+      </div>
+  </header>
+    <div class="maindesign">
+     <h1>Reach me :-</h1>
+      <div class="logos">
+        <div class="logoblock" style="margin-left: 30px">
+          <div class="logo"><a href="https://goo.gl/maps/ZK9tw2VPMPpnvVwe6" target="_blank"><img src="linkslogo\location_logo.png"></a></div>
+            <div class="desc"><a href="#" onclick="copytoclip(0)"><h5>Mailing address</h5>
+                                  <p class="info">H.no. 130,<br>Shankar Colony,<br>Sirsaganj,<br>Firozabad<br>U.P.</p>
+                              </a></div>
+        </div>
+        <div class="logoblock" style="margin: 5px 50px">
+              <div class="logo"><a href="#"><img src="linkslogo\phone_logo.jpg"></a></div>
+              <div class="desc"><h5>Phone number</h5>
+                                    <a href="#" onclick="copytoclip(1)"><p class="info">+916395585118</p></a>
+                                    <a href="#" onclick="copytoclip(2)"><p class="info">+917037839452</p></a>
+                                    <a href="#" onclick="copytoclip(3)"><p class="info">+9177777777XX</p></a>
+              </div>
+        </div>
+        <div class="logoblock" style="margin-right:50px">
+              <div class="logo"><a href="#"><img src="linkslogo\whatsapp_logo.jpg"></a></div>
+                <div class="desc"><h5>WhatsApp number</h5>
+                                    <a href="#" onclick="copytoclip(4)"><p class="info">+916395585118</p></a>
+                                    <a href="#" onclick="copytoclip(5)"><p class="info">+917037839452</p></a>
+                                    <a href="#" onclick="copytoclip(6)"><p class="info">+9198888888XX</p></a>
+                </div>
+        </div>
+        <div class="logoblock">
+               <div class="logo"><a href="#"><img src="linkslogo\gmail_logo.png"></a></div>
+               <div class="desc"><h5>Email address</h5>
+                                    <a href="#" onclick="copytoclip(7)"><p class="info">sagarkushwah0507@gmail.com</p></a>
+                                    <a href="#" onclick="copytoclip(8)"><p class="info">500076578@stu.upes.ac.in</p></a>
+                                    <a href="#" onclick="copytoclip(9)"><p class="info">github.sk.123@gmail.com</p></a>
+                </div>
+        </div>
+      </div>
+     <h1 style="margin-top: 80px">Follow me on :-</h1>
+      <div class="logos">
+        <div class="logoblock l1">
+          <div class="logo"><a href="https://facebook.com/Kushwahasagar0507/" target="_blank"><img src="linkslogo\facebook_logo.png"></a></div>
+        </div>
+        <div class="logoblock l1" >
+              <div class="logo"><a href="https://instagram.com/kushwahasagar05/" target="_blank"><img src="linkslogo\instagram_logo.jpg"></a></div>
+        </div>
+        <div class="logoblock l1" >
+               <div class="logo"><a href="https://linkedin.com/in/sagar-kushwah-11ba3418b/" target="_blank"><img src="linkslogo\linkedin_logo.png"></a></div>
+        </div>
+        <div class="logoblock l1">
+               <div class="logo"><a href="https://twitter.com/Sagarkushwah507/" target="_blank"><img src="linkslogo\twitter_logo.png"></a></div>
+        </div>
+      </div>
+       <p class="footinfo">Click on the logo to go to the page or click on the text to copy it.</p>
+    </div>
+   <script type="text/javascript">
+     function copytoclip(x){
+       var tmp = document.createElement("input");
+       if(x==0)
+          tmp.setAttribute("value","H.no. 256,vpo. Purkhas,Sonipat,Haryana");
+        else
+          tmp.setAttribute("value",document.getElementsByClassName("info")[x].innerHTML);
+       document.body.appendChild(tmp);
+       tmp.select();
+       document.execCommand("copy");
+       document.body.removeChild(tmp);
+       alert("Copied to Clipboard.");
+     
+      
+     }
+   </script>
+</body>
+</html>

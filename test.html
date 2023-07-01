@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+  <title>HOME test</title>
+  <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+  <link rel="stylesheet" type="text/css" href="css/teststyle.css">
+</head>
+<body>
+  <header >
+      <div class="main">
+        <div class="quote"><p id="qte"></p></div>
+        <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="Gallery.html" target="_self">Gallery</a></li>
+          <li><a href="About.html" target="_self">About</a></li>
+          <li><a href="Contact.html" target="_self">Contact</a></li>
+          <li><a href="Suggestions.html" target="_self">Suggestions</a></li>
+        </ul>
+      </div>
+   </header>
+  <div class="maindesign">
+      <h1>Welcome to my site</h1>
+      <div class="photoblock">
+            <div class="photo"> <a href="gallery_Photos/my_1_full.jpg" target="_blank"><img src="gallery_Photos/my_1.jpg"></a></div>
+            <div class="desc"><a href="About.html"><h2>Abhimanyu Gulia</h2>
+                                             <p>Bachelor of Science (H) Computer Science</p>
+                        </a>
+            </div>
+      </div>
+       <p class="footinfo">Click on the image to view full image or click on the text to know more about me.</p>
+  </div>
+<script type="text/javascript">
+  var x =0;
+  function showquote(x){
+      if(x==0)
+       getTimeout(function myfnc(){ document.getElementById("qte").innerHTML="testing0"},600);
+      else if(x==1)
+       getTimeout(function myfnc(){ document.getElementById("qte").innerHTML="testing1"},600);
+      else if(x==2)
+       getTimeout(function myfnc(){ document.getElementById("qte").innerHTML="testing2"},600);
+      else if(x==3)
+       getTimeout(function myfnc(){ document.getElementById("qte").innerHTML="testing3"},600);
+      else if(x>3){
+       getTimeout(function myfnc(){ document.getElementById("qte").innerHTML="testing0"},600);
+       x=-1;
+       }
+      x=x+1;
+      showquote(x);
+  }
+</script>
+</body>
+</html>
